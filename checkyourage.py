@@ -1,7 +1,8 @@
 # program to check age in python
+from datetime import datetime
 
-a = 2020
-b = int(input('input year of birth : '))
-c = a - b
+Current_year=int(datetime.now().strftime('%Y'))   #taking current year
 
-print('your age is ', c)
+Birth_year=int(input('Enter your Birth Year : '))
+
+print(f'You are {Current_year-Birth_year} years old ')
